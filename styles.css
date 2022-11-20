@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: rgb(24, 24, 24);
+}
+.calc__container {
+  display: grid;
+  grid-template-columns: 85%;
+  justify-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  border-radius: 2%;
+  background-color: rgb(54, 54, 54);
+  height: 750px;
+  width: 750px;
+}
+.calc__display {
+  display: grid;
+  align-items: center;
+  text-align: right;
+  margin-top: 50px;
+  margin-right: 25px;
+  width: 100%;
+  height: 50%;
+  background-color: rgb(165, 163, 163);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 6rem;
+}
+
+.calc__button:hover {
+  background-color: rgb(102, 102, 102);
+  border: 3px rgb(92, 91, 91) solid;
+}
+
+.button__container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.calc__button {
+  display: grid;
+  grid-column: span 2;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 125px;
+  margin: 15px;
+  background-color: rgb(109, 108, 108);
+  color: rgb(243, 243, 243);
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.button__container :nth-last-child(1) {
+  grid-column-end: -2;
+}
+.button__container :nth-last-child(2) {
+  grid-column-end: -4;
+}
+.button__container :nth-last-child(3) {
+  grid-column-end: -6;
+}

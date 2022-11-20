@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculator</title>
+  </head>
+  <header></header>
+
+  <body>
+    <main>
+      <!-- calculator -->
+      <div class="calc__container">
+        <!-- calculator's display -->
+        <div id="display" class="calc__display">0</div>
+
+        <!-- calculator's buttons -->
+        <div class="button__container">
+          <button class="calc__button" onclick="nextInput('7')">7</button>
+          <button class="calc__button" onclick="nextInput('8')">8</button>
+          <button class="calc__button" onclick="nextInput('9')">9</button>
+          <button class="calc__button" onclick="selectOperator('/')">/</button>
+          <button class="calc__button" onclick="nextInput('4')">4</button>
+          <button class="calc__button" onclick="nextInput('5')">5</button>
+          <button class="calc__button" onclick="nextInput('6')">6</button>
+          <button class="calc__button" onclick="selectOperator('*')">*</button>
+          <button class="calc__button" onclick="nextInput('1')">1</button>
+          <button class="calc__button" onclick="nextInput('2')">2</button>
+          <button class="calc__button" onclick="nextInput('3')">3</button>
+          <button class="calc__button" onclick="selectOperator('+')">+</button>
+          <button class="calc__button" onclick="makeNegative()">+/-</button>
+          <button class="calc__button" onclick="nextInput('0')">0</button>
+          <button class="calc__button" onclick="nextInput('.')">.</button>
+          <button class="calc__button" onclick="selectOperator('-')">-</button>
+          <button class="calc__button" onclick="runOperation()">=</button>
+          <button class="calc__button" onclick="backspace()">bksp</button>
+          <button class="calc__button" onclick="clear__all()">clear</button>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="app.js"></script>
+</html>
